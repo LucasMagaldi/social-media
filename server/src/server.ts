@@ -1,7 +1,6 @@
-import express, { Express } from 'express';
+import app from "./app";
+import log from './logger';
 
-const server = express();
-
-server.listen(3000, () => {
-    console.log("RUNNING")
+app.listen(3000, () => {
+    console.log(`RUNNING AT`)
 })
